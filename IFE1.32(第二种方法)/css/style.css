@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+}
+#all{
+    background-color: #eee;
+    margin: 20px 20px 300px 20px;
+    border: 2px solid #999 ;
+}
+#left{
+    width: 200px;
+    float: left;
+    margin: 20px;
+    border: 2px solid #999 ;
+    background-color: white;
+}
+#main{
+    margin: 20px 160px 20px 240px;
+    padding:20px;
+    border: 2px solid #999 ;
+    background-color: white;
+}
+#right {
+    width: 120px;
+    float: right;
+    margin:20px;
+    border: 2px solid #999;
+    background: white;
+}
+.left_1{
+    padding:20px;
+}
+.left_2 {
+    float: right;
+}
+.right_1{
+    padding:20px;
+}
