@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+}
+#all{
+    background-color: #eee;
+    width: 96%;
+    height:100%;
+    margin: 20px 20px 300px 20px;
+    border: 2px solid #999 ;
+}
+#left{
+    position: absolute;
+    left:0;
+    right:50%;
+    margin-right:400px;
+    border: 2px solid #999 ;
+    background-color: white;
+}
+#main{
+    position: absolute;
+    width:800px;
+    left:50%;
+    margin-left: -400px;
+    padding:20px;
+    border: 2px solid #999 ;
+    background-color: white;
+}
+#right {
+    position: absolute;
+    right:0;
+    left:50%;
+    margin-left:400px;
+    border: 2px solid #999;
+    background: white;
+}
+.left_1{
+    padding:20px;
+}
+.left_2 {
+    float: right;
+}
+.right_1{
+    text-align: center;
+    margin:20px auto;
+}
