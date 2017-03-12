@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background: #e2e2e2;
+    width:100%;
+    height:100%;
+}
+body h1{
+    font-size:30px;
+    line-height: 60px;
+}
+body h2{
+    font-size:20px;
+    line-height:40px;
+    color: #848484;
+}
+body h3{
+    font-size:14px;
+    line-height:40px;
+    color: #bcbcbc;
+}
+body p {
+    font-size:14px;
+    line-height: 30px;
+}
+.aside{
+    position: absolute;
+    width:400px;
+    right:20px;
+    top:80px;
+   /* padding:20px;*/
+    background: white;
+    border:1px solid gray;
+}
+.part1,.part2,.part3,.part4{
+    padding: 40px 20px;
+    margin: 20px 440px 20px 20px;
+    border:1px solid gray;
+    position: relative;
+    background: white;
+}
+header{
+    background: #636363;
+    width:100%;
+    height:60px;
+}
+header img{
+    float: left;
+    margin-left: 20px;
+    margin-top:10px;
+}
+header li{
+    float: right;
+    padding-top: 20px;
+    margin-right: 50px;
+    display: inline-block;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+header a:hover{
+    color: aqua;
+}
+.part4 li{
+    margin-left:40px;
+}
+.part4 table{
+    width: 100%;
+    border-collapse:collapse; /*边框合并属性*/
+    text-align: left;
+}
+.part4 table td,th{
+    border:1px solid #bfbfbf;
+}
+.part4 th{
+    color:white;
+    background-color: black;
+}
+.tr-last{
+    color: #000;
+    background: #bfbfbf;
+    font-weight:bold ;
+}
+
+.image
+{
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    border:2px solid gray;
+    text-align:center;
+    display: inline-block;
+}
+.image p{
+    line-height:30px;
+}
+.aside h2{
+    color: #000;
+    font-size:18px;
+    border-left:3px gray solid ;
+    margin:10px 15px;
+    padding-left:10px;
+}
+
+.aside  table{
+    /*width: 100%;*/
+    margin:10px auto;
+    font-size: 14px;
+}
+.aside table tr td:first-child{
+    text-align:right;
+    padding-right:10px;
+    height: 30px;
+    }
+
+    .submit_{
+     width:340px;
+    height:40px;
+        position: relative;
+        left:50%;
+        margin-left: -170px;
+        margin-bottom: 20px;
+    color:white;
+    background-color: #0c58ff;
+    border:none;
+    font-size: 15px;
+    border-radius:5px;
+}
+    .td_color1{
+        color: gray;
+    }
+.description{
+    float: right;
+}
+
+.foot_style{
+    width:100%;
+    height:50px;
+   color: white;
+    background: black;
+    position:static;
+ /*   bottom:0;*/
+
+}
+.foot_style p{
+    text-align: center;
+    padding-top:20px;
+}
