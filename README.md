@@ -5,4 +5,4 @@
 ###[任务三](https://hxvin.github.io/IFE-/IFE1.32/IFE1.32.html)
 ###[任务四](https://hxvin.github.io/IFE-/IFE1.4/IFE1.4.html)
 ###[任务五](https://hxvin.github.io/IFE-/IFE1.5/IFE1.5.htm)
-###[任务六](https://hxvin.github.io/IFE-/IFE1.6/IFE1.6.htm)
+###[任务六](https://hxvin.github.io/IFE-/IFE1.6/IFE1.6.html)
