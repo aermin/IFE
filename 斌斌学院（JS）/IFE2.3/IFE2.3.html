@@ -44,7 +44,7 @@
       var getLi = getUl.getElementsByTagName("li");
       
       for(var i = 0;i < getLi.length; i++){
-           var city = getLi[i].innerHTML.split("：")[0]; //注意这里有个坑，冒号分中英文，这里为中文冒号
+           var city = getLi[i].innerText.split("：")[0]; //注意这里有个坑，冒号分中英文，这里为中文冒号
            var num = getLi[i].innerText.split("：")[1]; //这边不用innerHTML而是用innerText的原因是innerHTML解析结果为：北京空气质量：<b>90</b>；innerText解析结果为：北京空气质量：90
            data.push([city,num]);
       };
@@ -99,8 +99,8 @@
           btnHandle();
           btn.disabled = "true";
         }) 
-      // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
-    //        var btn = document.getElementById("sort-btn");
+     
+    //        var btn = document.getElementById("sort-btn"); // 用onclick方法
     //         btn.onclick = btnHandle;
      }
 
