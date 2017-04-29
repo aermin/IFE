@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            border: none;
+        }
+
+        ul {
+            list-style: none;
+            /*position: relative;*/
+        }
+
+        ul li {
+
+            padding: 5px;
+            margin: 2px;
+            background-color: red;
+            color: white;
+            font: 14px;
+
+            display: inline-block;
+            vertical-align: bottom;
+
+            /*display: inline-block;
+				width: 30px;
+				background: red;
+				color: #fff;*/
+            /*vertical-align:bottom;
+                display:inline-block;*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="input" placeholder="请输入范围10-100的数字，至多可输入60个" id="num">
+    <button id="left_in">左侧入</button>
+    <button id="right_in">右侧入</button>
+    <button id="left_out">左侧出</button>
+    <button id="right_out">右侧出</button>
+    <button id="sort">排序</button>
+
+    <ul id="num_wrap">
+
+    </ul>
+
+    <script>
+        var numInput = document.getElementById("num");
+        var leftIn = document.getElementById("left_in");
+        var rightIn = document.getElementById("right_in");
+        var leftOut = document.getElementById("left_out");
+        var rightOut = document.getElementById("right_out");
+        var numList = document.getElementById("num_wrap");
+        var sortBtn = document.getElementById("sort");
+
+        //验证输入值有效性
+        function testnum() {
+            if (isNaN(numInput.value)) {
+                alert("请输入数字")
+                numInput.value = "";
+                numInput.focus();
+                return false;
+            } else if (numInput.value == "") {
+                alert("不能为空");
+                return false;
+            } else if (numInput.value < 10 || numInput.value > 100) {
+                alert("可输入数字的范围是10-100");
+                return false;
+            } else if (numList.children.length > 60) {
+                alert("对不起，最多只能输入输入显示60个数值");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+
+        //左侧入
+
+        leftIn.addEventListener("click", function () {
+            if (testnum()) {
+                var addLi = document.createElement('li');
+                // addLi.innerHTML = numInput.value;
+                addLi.style.height = numInput.value + "px"; //将数值可视化
+                numList.insertBefore(addLi, numList.firstChild);
+                numInput.value = "";
+                numInput.focus();
+            }
+        })
+
+        //右侧入
+        rightIn.addEventListener("click", function () {
+            if (testnum(numInput)) {
+                var addLi = document.createElement('li');
+                // addLi.innerHTML = numInput.value;
+                addLi.style.height = numInput.value + "px"; //将数值可视化
+                numList.appendChild(addLi);
+                numInput.value = "";
+                numInput.focus();
+            }
+        })
+
+        //左侧出
+
+        leftOut.addEventListener("click", function () {
+            var list = document.getElementsByTagName("li");
+            if (confirm("该数值为" + list[0].innerHTML + "你确定要删除？")) {
+                list[0].remove();
+            } else {
+                alert("已取消删除")
+            }
+            //   用firstChild也可以实现同样效果          
+            //   var list = numList.firstChild;
+            //   if(confirm("该数值为"+list.innerHTML+"你确定要删除？")){
+            //    list[0].remove();
+            //   }else{
+            //       alert("已取消删除")
+            //   }
+        })
+
+        //右侧出
+
+        rightOut.addEventListener("click", function () {
+            var list = document.getElementsByTagName("li");
+            var liLength = list.length;
+            if (confirm("该数值为" + list[liLength - 1].innerHTML + "你确定要删除？")) {
+                list[liLength - 1].remove();
+            } else {
+                alert("已取消删除")
+            }
+        })
+
+        //用事件代理实现点击删除li
+        numList.addEventListener("click", function (e) {
+            if (event.target.nodeName.toLowerCase() == "li") {
+                numList.removeChild(event.target);
+            }
+        })
+
+        //点击按钮进行排序
+        sortBtn.addEventListener("click", function () {
+            var list = document.getElementsByTagName("li");
+            var temp = [];
+            //讲li转化为数组
+            for (var m = 0; m < list.length; m++) {
+
+                var liHeight = list[m].style.height;
+                liHeight = liHeight.replace("px", "");
+                temp.push(liHeight);
+            }
+
+            //冒泡排序
+            function bubbleSort(arr) {
+                if (arr.length <= 1) {
+                    return arr;
+                }
+                for (var j = 0; j < arr.length; j++) {
+                    for (var i = 0; i < arr.length - j; i++) {
+                        if (arr[i] > arr[i + 1]) {
+                            var num = arr[i];
+                            arr[i] = arr[i + 1];
+                            arr[i + 1] = num;
+                        }
+                    }
+                }
+
+                return arr;
+            }
+
+            bubbleSort(temp);
+            //给排序完的数组添加px，赋给li
+            for (let n = 0; n < temp.length; n++) {
+                var addLi = document.createElement('li');
+                list[n].style.height = temp[n] + "px";
+            }
+            return list;
+        })
+    </script>
+</body>
+
+</html>
