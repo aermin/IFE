@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            border: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+            padding: 5px;
+            margin: 5px;
+            background-color: red;
+            color: white;
+            font: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <textarea  name="" cols="70" rows="5" id="num"></textarea><br>
+    <button id="left_in">左侧入</button>
+    <button id="right_in">右侧入</button>
+    <button id="left_out">左侧出</button>
+    <button id="right_out">右侧出</button><br>
+    <input type="text" naem="findtext" id="find_text">
+    <button id="find_out">查询</button>
+    <ul id="num_wrap">
+
+    </ul>
+
+    <script>
+        var numInput = document.getElementById("num");
+        var leftIn = document.getElementById("left_in");
+        var rightIn = document.getElementById("right_in");
+        var leftOut = document.getElementById("left_out");
+        var rightOut = document.getElementById("right_out");
+        var numList = document.getElementById("num_wrap");
+        var  findText = document.getElementById("find_text");
+        var findOut=document.getElementById("find_out");
+        //验证输入值有效性
+        function testnum() {
+            var  checkList=numInput.value.split(/\s+|\n|,|，/);
+            if (!checkList) { //如果输入值格式不对
+                alert("格式错误")
+                numInput.value = ""; //清空输入值
+                numInput.focus();  //输入框取得鼠标焦点
+                return false;
+            } else if (checkList== "") { //如果输入值为空
+                alert("不能为空");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+
+        //左侧入
+
+        leftIn.addEventListener("click", function () {
+            if (testnum()) {
+                var addLi = document.createElement('li'); //创建<li></li>
+                addLi.innerHTML = numInput.value;   //给<li></li>里面添加输入值
+                numList.insertBefore(addLi, numList.firstChild); //插入到<ul>的第一个<li></li>之前
+                numInput.value = ""; //清空输入值
+                numInput.focus();  //输入框取得鼠标焦点
+            }
+        },false);
+
+        //右侧入
+        rightIn.addEventListener("click", function () {
+            if (testnum(numInput)) {
+                var addLi = document.createElement('li');
+                addLi.innerHTML = numInput.value;
+                numList.appendChild(addLi); //插入到<ul>的第一个<li></li>之后
+                numInput.value = "";
+                numInput.focus();
+            }
+        },false);
+
+        //左侧出
+
+        leftOut.addEventListener("click", function () {
+            var list = document.getElementsByTagName("li");
+            if (confirm("该数值为" + list[0].innerHTML + "你确定要删除？")) {
+                list[0].remove();
+            } else {
+                alert("已取消删除")
+            }
+            //   用firstChild也可以实现同样效果          
+            //   var list = numList.firstChild;
+            //   if(confirm("该数值为"+list.innerHTML+"你确定要删除？")){
+            //    list[0].remove();
+            //   }else{
+            //       alert("已取消删除")
+            //   }
+        },false);
+
+        //右侧出
+
+        rightOut.addEventListener("click", function () {
+            var list = document.getElementsByTagName("li");
+            var liLength = list.length;
+            if (confirm("该数值为" + list[liLength - 1].innerHTML + "你确定要删除？")) {
+                list[liLength - 1].remove();
+            } else {
+                alert("已取消删除")
+            }
+        },false);
+
+        //用事件代理实现点击删除li
+        numList.addEventListener("click", function (e) {
+            if (event.target.nodeName.toLowerCase() == "li") {
+                numList.removeChild(event.target);
+            }
+        })
+
+        //查询
+        findOut.addEventListener("click",function(){
+            if(findText.value == ""){ //验证是否为空值
+                alert("请输入查找内容");
+                findText.value = ""; //清空输入值
+                findText.focus();  //输入框取得鼠标焦点
+                return false;
+            }
+        var list = document.getElementsByTagName("li");
+            for(let i =0;i<list.length;i++){ //for循环将查询值在各元素内容中做模糊匹配
+                if(list[i].innerHTML.indexOf(findText.value)>=0){ //若存在，字符的起始位置将是0开始的数字
+                 list[i].style.backgroundColor = "green"; //匹配成功的元素背景设为绿色
+                }else{
+                    list[i].style.backgroundColor ="red";
+                }
+            }
+        },false);
+    </script>
+</body>
+
+</html>
