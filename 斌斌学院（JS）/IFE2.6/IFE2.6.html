@@ -28,7 +28,7 @@
 
 <body>
 
-    <textarea  name="" cols="70" rows="5" id="num"></textarea><br>
+    <textarea name="" cols="70" rows="5" id="num"></textarea><br>
     <button id="left_in">左侧入</button>
     <button id="right_in">右侧入</button>
     <button id="left_out">左侧出</button>
@@ -46,17 +46,17 @@
         var leftOut = document.getElementById("left_out");
         var rightOut = document.getElementById("right_out");
         var numList = document.getElementById("num_wrap");
-        var  findText = document.getElementById("find_text");
-        var findOut=document.getElementById("find_out");
+        var findText = document.getElementById("find_text");
+        var findOut = document.getElementById("find_out");
         //验证输入值有效性
         function testnum() {
-            var  checkList=numInput.value.split(/\s+|\n|,|，/);
+            var checkList = numInput.value.split(/\s+|\n|,|，/);
             if (!checkList) { //如果输入值格式不对
                 alert("格式错误")
                 numInput.value = ""; //清空输入值
-                numInput.focus();  //输入框取得鼠标焦点
+                numInput.focus(); //输入框取得鼠标焦点
                 return false;
-            } else if (checkList== "") { //如果输入值为空
+            } else if (checkList == "") { //如果输入值为空
                 alert("不能为空");
                 return false;
             } else {
@@ -70,12 +70,12 @@
         leftIn.addEventListener("click", function () {
             if (testnum()) {
                 var addLi = document.createElement('li'); //创建<li></li>
-                addLi.innerHTML = numInput.value;   //给<li></li>里面添加输入值
+                addLi.innerHTML = numInput.value; //给<li></li>里面添加输入值
                 numList.insertBefore(addLi, numList.firstChild); //插入到<ul>的第一个<li></li>之前
                 numInput.value = ""; //清空输入值
-                numInput.focus();  //输入框取得鼠标焦点
+                numInput.focus(); //输入框取得鼠标焦点
             }
-        },false);
+        }, false);
 
         //右侧入
         rightIn.addEventListener("click", function () {
@@ -86,7 +86,7 @@
                 numInput.value = "";
                 numInput.focus();
             }
-        },false);
+        }, false);
 
         //左侧出
 
@@ -104,7 +104,7 @@
             //   }else{
             //       alert("已取消删除")
             //   }
-        },false);
+        }, false);
 
         //右侧出
 
@@ -116,7 +116,7 @@
             } else {
                 alert("已取消删除")
             }
-        },false);
+        }, false);
 
         //用事件代理实现点击删除li
         numList.addEventListener("click", function (e) {
@@ -126,22 +126,22 @@
         })
 
         //查询
-        findOut.addEventListener("click",function(){
-            if(findText.value == ""){ //验证是否为空值
+        findOut.addEventListener("click", function () {
+            if (findText.value == "") { //验证是否为空值
                 alert("请输入查找内容");
                 findText.value = ""; //清空输入值
-                findText.focus();  //输入框取得鼠标焦点
+                findText.focus(); //输入框取得鼠标焦点
                 return false;
             }
-        var list = document.getElementsByTagName("li");
-            for(let i =0;i<list.length;i++){ //for循环将查询值在各元素内容中做模糊匹配
-                if(list[i].innerHTML.indexOf(findText.value)>=0){ //若存在，字符的起始位置将是0开始的数字
-                 list[i].style.backgroundColor = "green"; //匹配成功的元素背景设为绿色
-                }else{
-                    list[i].style.backgroundColor ="red";
+            var list = document.getElementsByTagName("li");
+            for (let i = 0; i < list.length; i++) { //for循环将查询值在各元素内容中做模糊匹配
+                if (list[i].innerHTML.indexOf(findText.value) >= 0) { //若存在，字符的起始位置将是0开始的数字
+                    list[i].style.backgroundColor = "green"; //匹配成功的元素背景设为绿色
+                } else {
+                    list[i].style.backgroundColor = "red";
                 }
             }
-        },false);
+        }, false);
     </script>
 </body>
 
