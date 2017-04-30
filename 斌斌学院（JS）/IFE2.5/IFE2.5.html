@@ -61,18 +61,18 @@
 
         //验证输入值有效性
         function testnum() {
-            if (isNaN(numInput.value)) {
+            if (isNaN(numInput.value)) { //判断输入值是否为数字
                 alert("请输入数字")
-                numInput.value = "";
-                numInput.focus();
+                numInput.value = ""; //清空输入值
+                numInput.focus();     //输入框取得鼠标焦点
                 return false;
-            } else if (numInput.value == "") {
+            } else if (numInput.value == "") { //判断输入值是否为空
                 alert("不能为空");
                 return false;
-            } else if (numInput.value < 10 || numInput.value > 100) {
+            } else if (numInput.value < 10 || numInput.value > 100) { //判断输入值的范围是否在10-100内
                 alert("可输入数字的范围是10-100");
                 return false;
-            } else if (numList.children.length > 60) {
+            } else if (numList.children.length > 60) { //判断输入值的个数书否超过60
                 alert("对不起，最多只能输入输入显示60个数值");
                 return false;
             } else {
@@ -85,12 +85,12 @@
 
         leftIn.addEventListener("click", function () {
             if (testnum()) {
-                var addLi = document.createElement('li');
+                var addLi = document.createElement('li'); //创建<li></li>
                 // addLi.innerHTML = numInput.value;
                 addLi.style.height = numInput.value + "px"; //将数值可视化
-                numList.insertBefore(addLi, numList.firstChild);
-                numInput.value = "";
-                numInput.focus();
+                numList.insertBefore(addLi, numList.firstChild);//插入到<ul>的第一个<li></li>之前
+                numInput.value = "";//清空输入值
+                numInput.focus();//输入框取得鼠标焦点
             }
         })
 
@@ -151,7 +151,7 @@
             for (var m = 0; m < list.length; m++) {
 
                 var liHeight = list[m].style.height;
-                liHeight = liHeight.replace("px", "");
+                liHeight = liHeight.replace("px", ""); //去掉px
                 temp.push(liHeight);
             }
 
@@ -177,7 +177,7 @@
             //给排序完的数组添加px，赋给li
             for (let n = 0; n < temp.length; n++) {
                 var addLi = document.createElement('li');
-                list[n].style.height = temp[n] + "px";
+                list[n].style.height = temp[n] + "px"; //添加px
             }
             return list;
         })
