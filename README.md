@@ -1,5 +1,5 @@
-# **2017IFE任务练习目录**
-## **薇薇学院(HTML&CSS)**
+## 2017IFE任务练习目录
+> 薇薇学院(HTML&CSS)
 ### 任务一
 #### [任务描述](http://ife.baidu.com/course/detail/id/90)
 #### [demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/2017IFE1.1.html)
@@ -21,7 +21,7 @@
 ### 任务七
 #### [任务描述](http://ife.baidu.com/course/detail/id/102)
 #### [demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/IFE1.7/IFE1.7.html)
-## **斌斌学院(JS)**
+> 斌斌学院(JS)
 ### 任务一
 #### [任务描述](http://ife.baidu.com/course/detail/id/93)
 #### [demo演示](https://hxvin.github.io/IFE-/斌斌学院（JS）/IFE2.1/IFE2.1.html)
