@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      list-style: none;
+    font-family: "Microsoft YaiHei", "Helvetica Neue", Helvetica, STHeiti, Arial, sans-serif;
+}
+html {
+font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+.deliver{
+    height: 3rem;
+    background-color: #F5F5F5;
+    margin: 2rem auto;
+}
+.header {
+    background-color: #8AD4D9;
+    color: #fff;
+    height: 6rem;
+    line-height: 6rem;
+  
+}
+.header a{
+    position: relative;
+    font-size: 3rem;
+      color: #fff;
+}
+.header img{
+    height: 2.2rem;
+}
+.header h1{
+position: absolute;
+text-align: center;
+width: 100%;
+top: 0;
+font-size: 3rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+      /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 7rem;
+    font-size: 2rem;
+}
+.nav li{
+    padding: 0.5rem;
+    height: 7rem;
+    line-height: 6rem;
+    color: #777777;
+}
+.nav .li2{
+    border-bottom: 0.3rem solid #8AD4D9;
+}
+.pho img{
+  width: 100%;
+}
+.tag{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
+    border-bottom: 0.2rem solid #e5e5e5;
+}
+.tag h2{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 1.4rem;
+}
+.tag li img{
+   width: 4.5rem;
+   height: 4.5rem;
+}
+.columns{
+    display: flex;
+    margin: 3rem auto;
+    
+}
+/*a为内联元素，设置为块状元素好让它充满父元素*/
+.columns a{
+     display: block;
+    text-align: center;
+}
+.columns img{
+   
+    width:7rem;
+    height: 9rem;   
+}
+.columns-2{
+    border-right: 0.1rem solid #e5e5e5;
+     border-left: 0.1rem solid #e5e5e5;
+}
+/*这边是为了让items分配多余空间，两边border线才能自己居中*/
+/*flex: none或者auto | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+none (0 0 auto) ;auto (1 1 auto) */
+.columns-1,.columns-2,.columns-3{
+  flex:auto;  
+}
+
+.columns h2,.columns h3{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 1.4rem;
+}
+
+._writer{
+    font-size: 2.5rem;
+    color: #7E7E7E;
+    padding: 1rem;
+    border-bottom: 0.2rem solid #e5e5e5;
+}
+
+.writer{
+    display: flex;
+}
+.writer li._text{
+        flex:auto;      
+}
+
+.li-pho img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width:10rem;
+    height:10rem;
+}
+
+.text li{
+  height: 4.5rem;
+  background-color: #F8F8F8;
+  margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+.title{
+    position: relative;
+}
+.title img{
+    width: 9rem;
+    height: 8rem;
+    margin:auto 1rem;
+}
+.title li{
+    border-bottom: 0.2rem solid #e5e5e5;
+    padding-top: 1rem ;
+    padding-bottom: 2rem;
+}
+.title-{
+    display:inline-block;
+    position: absolute;
+    height: 9rem;
+
+}
+.title- h2,.title-last h2{
+    font-size: 1.8rem;
+       color: #949494;
+       margin-left: 1rem;
+}
+.title- h3,.title-last h3{
+    position: absolute;
+    font-size: 1rem;
+    bottom: 0;
+    color: #C8C8C8;
+    margin: 1rem;
+}
+.title-last{
+    border-style: none;
+}
+/*如果只设置display: flex;而已，那只有items靠在一起的结果*/
+.title-last-img{
+    display: flex;
+    justify-content: space-around; 
+}
+.title-last-img img{
+    margin: 0.1rem;
+}
+.footer{
+    height: 4rem;
+    background-color: #F5F5F5;
+}
+
+
+/*ps：flex:auto;要用在想让里面东西拉长的最外层，如html中的第53行，第80行*/
