@@ -3,8 +3,7 @@
 > 薇薇学院(HTML&CSS)
 
 ` 任务一`
- #### [任务描述](http://ife.baidu.com/course/detail/id/90)|[demo零基础HTML编码](http://www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/2017IFE1.1.html)
-` 任务二`
+ #### [任务描述](http://ife.baidu.com/course/detail/id/90)|[demo零基础HTML编码](http://www.hxvin.me/IFE-/薇薇学院(HTML%26CSS)/IFE1.1/2017IFE1.1.html)
 #### [任务描述](http://ife.baidu.com/course/detail/id/92)|[demo零基础HTML及CSS编码（一）](http://www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.2/IFE1.2.htm)
 ` 任务三`
 #### [任务描述](http://ife.baidu.com/course/detail/id/94)|[demo三栏式布局](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.32/IFE1.32.html)
