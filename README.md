@@ -11,8 +11,7 @@
 ` 任务四`
 #### [任务描述](http://ife.baidu.com/course/detail/id/95)|[demo定位和居中问题](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.4/IFE1.4.html)
 ` 任务五`
-#### [任务描述](http://ife.baidu.com/course/detail/id/96)|[demo零基础HTML及CSS编码（二）
-](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.5/IFE1.5.htm)
+#### [任务描述](http://ife.baidu.com/course/detail/id/96)|[demo零基础HTML及CSS编码（二）](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.5/IFE1.5.htm)
 ` 任务六`
 #### [任务描述](http://ife.baidu.com/course/detail/id/99)|[demo通过HTML及CSS模拟报纸排版](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.6/IFE1.6.html)
 ` 任务七`
@@ -22,8 +21,7 @@
 ` 任务十`
 #### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo Flexbox 布局练习](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.10/IFE1.10.html)
 ` 任务十一`
-#### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo移动Web页面布局实践
-](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.11/IFE1.11.html)
+#### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo移动Web页面布局实践](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.11/IFE1.11.html)
 
 > 斌斌学院(JS)
 
