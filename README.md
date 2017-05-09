@@ -9,7 +9,7 @@
 ` 任务三`
 #### [任务描述](http://ife.baidu.com/course/detail/id/94)|[demo三栏式布局](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.32/IFE1.32.html)
 ` 任务四`
-#### [任务描述](http://ife.baidu.com/course/detail/id/95)|[demo定位和居中问题](www.hxvin.me/IFE-/薇薇学院(HTML%26CSS)/IFE1.4/IFE1.4.html)
+#### [任务描述](http://ife.baidu.com/course/detail/id/95)|[demo定位和居中问题](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.4/IFE1.4.html)
 ` 任务五`
 #### [任务描述](http://ife.baidu.com/course/detail/id/96)|[demo零基础HTML及CSS编码（二）](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.5/IFE1.5.htm)
 ` 任务六`
