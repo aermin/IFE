@@ -6,7 +6,7 @@
 ` 任务二`
 #### [任务描述](http://ife.baidu.com/course/detail/id/92)|[demo演示](http://www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.2/IFE1.2.htm)
 ` 任务三`
-#### [任务描述](http://ife.baidu.com/course/detail/id/94)|[demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/IFE1.32/IFE1.32.html)
+#### [任务描述](http://ife.baidu.com/course/detail/id/94)|[demo演示](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.32/IFE1.32.html)
 ` 任务四`
 #### [任务描述](http://ife.baidu.com/course/detail/id/95)|[demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/IFE1.4/IFE1.4.html)
 ` 任务五`
