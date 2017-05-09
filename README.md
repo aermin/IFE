@@ -16,6 +16,13 @@
 #### [任务描述](http://ife.baidu.com/course/detail/id/99)|[demo演示](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.6/IFE1.6.html)
 ` 任务七`
 #### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo演示](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.7/IFE1.7.html)
+` 任务八`
+#### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo演示](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.8/IFE1.8.html)
+` 任务十`
+#### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo演示](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.10/IFE1.10.html)
+` 任务十一`
+#### [任务描述](http://ife.baidu.com/course/detail/id/102)|[demo演示](www.hxvin.me/IFE-/薇薇学院(HTML&CSS)/IFE1.11/IFE1.11.html)
+
 > 斌斌学院(JS)
 
 ` 任务一`
