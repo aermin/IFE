@@ -2,8 +2,7 @@
 > 薇薇学院(HTML&CSS)
 
 ` 任务一`
-#### [任务描述](http://ife.baidu.com/course/detail/id/90)
-#### [demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/2017IFE1.1.html)
+ [任务描述](http://ife.baidu.com/course/detail/id/90)|[demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/2017IFE1.1.html)
 ` 任务二`
 #### [任务描述](http://ife.baidu.com/course/detail/id/92)
 #### [demo演示](https://hxvin.github.io/IFE-/薇薇学院(HTML&CSS)/IFE1.2/IFE1.2.htm)
